@@ -50,14 +50,14 @@ def main():
         
         
         #Ensureing
-        
-        if data_search(accId,1):
+        print(data_search(str(accId),2))
+        if data_search(accId,1) == False:
             print ("Id or pin wrong!")
             return
         print ("Succesfully logged in!\n")
 
-        accDetails = data_search(accId,2)           ##Here 
-        acc = BankAccount.Account(accId[1], "Mehmet", 0000, 2000.0)
+        accDetails = data_search(accId,2)            
+        acc = BankAccount.Account(accId, "Mehmet", 0000, 2000.0)
         #Main loop
         while (True):
             #UI
@@ -113,31 +113,34 @@ def ensure_float(input):
 def data_import(accId, name, pin, balance):
     # Write variables to file
     with open("accounts.txt", "a") as file:
-        file.write(f"accId: {accId}, ")
-        file.write(f"Name: {name}, ")
-        file.write(f"pin: {pin}, ")
+        file.write(f"accId:   {accId}, ")
+        file.write(f"Name:    {name}, ")
+        file.write(f"pin:     {pin}, ")
         file.write(f"balance: {balance}\n")
 
 
 
 def data_search(accId, mode):
     #mode 1 = if exist ; 2 = get information
-    with open("accounts.txt", "r") as file: # Open file
-        lines = file.readlines()    #Read all lines
-        #Line my line analyse
-        for line in lines[0:-2]:    
-            parts = line.split(", ") #Seperate dictionary values
-            key = False              #Key for break loop after find wanted value
-            if key == True: list
-            for part in parts:       #analyse each part 
-                if part == accId: 
-                    key = True
-                    if mode == 1:
-                        return True
-                    elif mode == 2:
-                        list.append(part)
-
-
+    file = open("accounts.txt", "r")# Open file
+    lines = file.readlines()    #Read all lines
+    file.close()
+    #Line my line analyse
+    for line in lines:  
+        parts = line.split(", ") #Seperate dictionary values
+        key = False              #Key for break loop after find wanted value
+        for part in parts:       #analyse each part 
+            part = part[9:]
+            if part == accId:
+                list(accId) 
+                key = True
+            if mode == 1 and key == True:
+                return True
+            elif mode == 2 and key == True:
+                list.append(part)
+        if key == True: 
+            return list
+    return False
 
 
 main()
