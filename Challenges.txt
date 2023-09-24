@@ -1,0 +1,31 @@
+1: Loading Data
+Load a CSV file into a pandas DataFrame. You can use the read_csv function. Once loaded, display the first 5 rows of the DataFrame.
+
+Challenge 2: Data Exploration
+Explore the loaded DataFrame by answering the following questions:
+
+How many rows and columns does the DataFrame have?
+What are the names of the columns?
+What are the data types of each column?
+Are there any missing values in the DataFrame?
+
+Challenge 3: Filtering Data
+Filter the DataFrame to only include rows where a specific column meets a certain condition. For example, filter the DataFrame to only include rows where the 'Age' column is greater than 30.
+
+Challenge 4: Sorting Data
+Sort the DataFrame by a specific column in ascending and descending order. Display the top 5 rows for each sorting.
+
+Challenge 5: Grouping and Aggregation
+Group the DataFrame by a categorical column and calculate summary statistics for each group. For example, calculate the mean and median of the 'Salary' column for each group.
+
+Challenge 6: Categorize
+Seperate each group and show just their gender, average score and group name. Make a sort by arerage score and if average score is same sort them by gender; first: female, then male.
+
+Challenge 7: Counting
+Seperete each group and count them and show how many male and female is in the each group.
+
+Challenge 8: Analysis
+Show each groups female and male mean of average scores
+
+#Challenge 9:
+#Read file chuck by chunk (Deal with large amounts of data)

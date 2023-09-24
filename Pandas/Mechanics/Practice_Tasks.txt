@@ -1,0 +1,48 @@
+Practice Task 1: Data Filtering and Selection
+
+    In this task, you'll practice filtering and selecting data from the Titanic dataset.
+
+Task 1a: Select Female Passengers
+
+    Select all rows from the Titanic dataset where the "Sex" column is equal to "female." How many female passengers are there?
+
+Task 1b: Select Passengers Aged 25 or Younger
+
+    Select all rows from the Titanic dataset where the "Age" column is 25 or younger. How many passengers are 25 or younger?
+
+Practice Task 2: Data Aggregation and Summary Statistics
+
+    In this task, you'll practice aggregating and calculating summary statistics on the Titanic dataset.
+
+Task 2a: Calculate the Average Fare by Passenger Class
+
+    Calculate the average fare paid by passengers in each passenger class (First Class, Second Class, Third Class).
+
+Task 2b: Calculate the Survival Rate by Passenger Class and Gender
+
+    Calculate the survival rate for passengers in each passenger class and gender. The survival rate is the percentage of survivors in each group.
+
+Practice Task 3: Data Visualization
+
+    In this task, you'll create visualizations using the Titanic dataset.
+
+Task 3a: Create a Bar Chart of Passenger Counts by Class
+
+    Create a bar chart to visualize the number of passengers in each passenger class (First Class, Second Class, Third Class).
+
+Task 3b: Create a Pie Chart of Survival Proportion
+
+    Create a pie chart to visualize the proportion of survivors and non-survivors among passengers.
+
+!!Combined Practice!!
+    Task 1: Filtering and Summary Statistics
+    Select all female passengers who are 25 years old or younger and calculate the average fare paid by this group.
+
+    Task 2: Data Visualization
+    Create a bar chart to visualize the number of female passengers in each passenger class (First Class, Second Class, Third Class).
+
+    Task 3: Data Analysis
+    Calculate the survival rate for male passengers who are 25 years old or younger.
+
+    Task 4: More Data Visualization
+    Create a pie chart to visualize the proportion of female survivors and non-survivors among passengers in the selected age group.
